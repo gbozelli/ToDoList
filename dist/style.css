@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  --blue:#03a3e8;
+  --white:aliceblue;
+  --grey:#aeaeae;
+  font-family: Roboto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr;
+  gap:8px;
+}
+
+.sidebar {
+  background-color: #03a3e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:baseline;
+  padding: 8px;
+  color: aliceblue;
+}
+
+#todolist{
+  font-size: 58px;
+}
+
+#projects, #todos {
+  border:0px;
+  background-color:var(--blue);
+  font-size: 36px;
+  font-weight: bold;
+  color: aliceblue;
+  font-family: Roboto;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+[class^='project'] {
+  width: 24rem;
+  background-color:var(--blue);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+#Title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.task {
+  background-color: var(--white);
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  width: 24rem;
+  justify-content: space-between;
+}
+
+#jcheck {
+  background-color: greenyellow;
+  width: 16px;
+  height: 16px;
+}
+
+#add {
+  color: var(--white);
+  font-size: 32px;
+  border:0px;
+  background-color:var(--blue);
+}
+
+#create {
+  color: var(--white);
+  font-size: 64px;
+  border:0px;
+  background-color:var(--blue);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 8px;
+}
