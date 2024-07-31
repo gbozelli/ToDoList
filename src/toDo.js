@@ -6,9 +6,13 @@ class toDo {
 }
 
 class project {
-  static list = []; 
   
-  addToDo(){
+  constructor() {
     
   }
+
+  addToDo(toDo){
+    list.push(toDo)
+  }
 }
+
