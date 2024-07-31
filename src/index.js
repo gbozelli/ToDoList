@@ -96,6 +96,13 @@ class Task{
       createProjects();
     });
 
+    task.addEventListener("click", () => {
+      const p = document.getElementById('taskText');
+      p.textContent = this.name + this.date + this.status + this.priority;
+      showTask.showModal();
+      
+    });
+
     task.appendChild(name);
     task.appendChild(date);
     task.appendChild(priority);
@@ -154,4 +161,11 @@ confirm.addEventListener("click", (event) => {
   event.preventDefault(); 
   let task = new Task(tname, tdate, tcheck, tpriority, current);
   current.add(task);
+});
+
+const showTask = document.getElementById('tasks');
+const closeButton = document.getElementById('close');
+
+closeButton.addEventListener("click", () => {
+  showTask.close();
 });
