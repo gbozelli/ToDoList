@@ -4,11 +4,18 @@
   "description": "Project from OdinProject",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint.js"
   },
   "author": "Zobelli",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.8.0",
+    "lint": "eslint **/*.js",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   }
